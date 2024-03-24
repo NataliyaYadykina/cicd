@@ -1,0 +1,22 @@
+build1_remote:
+  stage: build
+  script:
+    - echo "It is the remote repository for the hw_4.Ci/CD"
+
+test1_remote:
+  stage: test
+  script:
+    - echo "Do a test here"
+    - echo "For example run a test suite"
+
+test2_remote:
+  stage: test
+  script:
+    - echo "Do another parallel test here"
+    - echo "For example run a lint test"
+
+deploy1_remote:
+  stage: deploy
+  script:
+    - echo "Do your deploy here"
+  environment: production
